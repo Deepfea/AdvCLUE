@@ -1,0 +1,9 @@
+# TNEWS	        256
+# PKU	        512
+# CLUEWSC2020	256
+# LCQMC	        256
+# OCNLI	        256
+# CSL	        512
+# CMRC2018	    512
+# CHID	        256
+# C3	        510
