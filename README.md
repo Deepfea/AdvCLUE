@@ -10,6 +10,27 @@ The physical host is a machine running on the Ubuntu 18.04 system, equipped with
 
 We utilize Anaconda 3 to manage all of the Python packages. To facilitate reproducibility of the Python environment, we release an Anaconda YAML specification file of the libraries utilized in the experiments. This allows the user to create a new virtual Python environment with all of the packages required to run the code by importing the YAML file. 
 
+### Datasets:
+We propose AdvCLUE on nine datasets. The dataset details are shown as follows:
+
+**Toutiao text classification for NEWS titles (TNEWS)** consists of Chinese news published by Toutiao. It contains labeled data from 15 news categories, such as sports, finance, and technology. We collect 63359 data in TNEWS, 53359 for training and 10000 for testing.
+
+**Chinese word segmentation dataset created by Peking University (PKU)** is designed to identify the sequence of words in a sentence. It is annotated from the news corpus of the People’s Daily. We collect 21000 data in PKU, 19056 for training and 1944 for testing.
+
+**The Chinese Language Understanding Evaluation of Winograd Schema Challenge (CLUEWSC2020)** is an anaphora/coreference resolution task, where the model decides whether a pronoun and a noun (phrase) in a sentence co-refer (binary classification). Sentences in CLUEWSC2020 are carefully chosen from 36 contemporary literary works in Chinese. We collect 1548 data in CLUEWSC2020, 1244 for training and 304 for testing.
+
+**The Large-scale Chinese Question Matching Corpus dataset (LCQMC)** is a general paraphrase corpus focusing on intent matching rather than paraphrasing. It is collected from a search engine to contain large-scale question pairs related to high-frequency words from various domains, as well as a filter using Wasserstein distance. We collect 247568 data in LCQMC, 238766 for training and 8802 for testing.
+
+**Original Chinese Natural Language Inference (OCNLI)** is a native Chinese natural language inference task without translation. It comprises large-scale inference pairs from five genres, including news, government, fiction, TV transcripts, and telephone transcripts. We collect 53486 data in OCNLI, 50486 for training and 3000 for testing.
+
+**Chinese Scientific Literature (CSL)** is a dataset containing Chinese paper abstracts and their keywords from core journals of China, covering multiple fields of natural sciences and social sciences. Given the abstracts and some keywords, the dataset is designed to discover whether they can match each other. We collect 23000 data in CSL, 20000 for training and 3000 for testing.
+
+**Chinese Machine Reading Comprehension dataset (CMRC2018)** is a span-extraction based dataset for Chinese machine reading comprehension, which is composed of contexts, questions, and related answers. Furthermore, the answers are the text spans in contexts. We collect 13361 data in CMRC2018, 10142 for training and 3219 for testing.
+
+**Chinese IDiom dataset (ChID)** is a large-scale Chinese idiom cloze testing task, which assesses the ability of models to understand and represent idioms in Chinese reading comprehension. Each blank in the passage has several candidate idioms with one golden option. We collect 600167 data in ChID, 577156 for training and 23011 for testing.
+
+**Free-form multiple Choice Chinese machine reading Comprehension dataset (C3)** is the first free-form multiple-choice dataset that presents a comprehensive analysis of the prior Chinese knowledge, i.e., linguistic, domain-specific, and general world knowledge, needed in the real world. Each question in the dataset has a correct answer from 2 to 4 options, rather than yes or no. We collect 122800 data in C3, 119000 for training and 3800 for testing.
+
 ### Models:
 We conduct the experiments on six typical Chinese BERT-based PLMs named BERT, BERTwwm, BERTwwm/ext, RoBERTa, ERNIE, and MacBERT. Their details are shown as follows:
 
