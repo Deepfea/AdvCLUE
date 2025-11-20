@@ -20,7 +20,7 @@ We propose AdvCLUE on the datasets of single sentence tasks, sentence pair tasks
 
 **Chinese word segmentation dataset created by Peking University (PKU)** is designed to identify the sequence of words in a sentence. It is annotated from the news corpus of the People’s Daily. We collect 21000 data in PKU, 19056 for training and 1944 for testing.
 
-**The Chinese Language Understanding Evaluation of Winograd Schema Challenge (CLUEWSC2020)** is an anaphora/coreference resolution task, where the model decides whether a pronoun and a noun (phrase) in a sentence co-refer (binary classification). Sentences in CLUEWSC2020 are carefully chosen from 36 contemporary literary works in Chinese. We collect 1548 data in CLUEWSC2020, 1244 for training and 304 for testing.
+**The Chinese Language Understanding Evaluation of Winograd Schema Challenge (WSC)** is an anaphora/coreference resolution task, where the model decides whether a pronoun and a noun (phrase) in a sentence co-refer (binary classification). Sentences in CLUEWSC2020 are carefully chosen from 36 contemporary literary works in Chinese. We collect 1548 data in WSC, 1244 for training and 304 for testing.
 \end{itemize}
 
 **Sentence pair tasks** contain pairwise associated data, whose labels represent relationships. Compared with single sentence tasks, the datasets evaluate whether models can understand the relationships between texts and perform higher-level text analysis. The selected datasets are shown as follows:
@@ -33,7 +33,7 @@ We propose AdvCLUE on the datasets of single sentence tasks, sentence pair tasks
 
 **Machine reading comprehension tasks** contain the hot topic in the NLU. Such datasets contain complete expositions of events or persons. They evaluate whether models can understand text contents and answers related questions like humans. The selected datasets are shown as follows:
 
-**Chinese Machine Reading Comprehension dataset (CMRC2018)** is a span-extraction based dataset for Chinese machine reading comprehension, which is composed of contexts, questions, and related answers. Furthermore, the answers are the text spans in contexts. We collect 13361 data in CMRC2018, 10142 for training and 3219 for testing.
+**Chinese Machine Reading Comprehension dataset (CMRC)** is a span-extraction based dataset for Chinese machine reading comprehension, which is composed of contexts, questions, and related answers. Furthermore, the answers are the text spans in contexts. We collect 13361 data in CMRC, 10142 for training and 3219 for testing.
 
 **Chinese IDiom dataset (ChID)** is a large-scale Chinese idiom cloze testing task, which assesses the ability of models to understand and represent idioms in Chinese reading comprehension. Each blank in the passage has several candidate idioms with one golden option. We collect 600167 data in ChID, 577156 for training and 23011 for testing.
 
